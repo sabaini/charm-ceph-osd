@@ -48,3 +48,13 @@ add-disk:
       description: The name of the bucket in Ceph to add these devices into
   required:
     - osd-devices
+bcache-stats:
+  description: Get caching stats from bcache devices
+  params:
+    interval:
+      type: string
+      description: Stats over last 'five_minutes', 'hour', 'day' or 'total'
+    osd-devices:
+      type: string
+      description: Device to get stats for or 'all'
+      
